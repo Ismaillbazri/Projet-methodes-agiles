@@ -1,3 +1,25 @@
+<p align="center"><a href="https://laravel.com" target="_blank">Backlog :</p>
+
+•	Afficher un seul vol dans la page d’accueil
+•	 Sélectionner ce vol pour se ramener sur une autre page qui afficher ses informations 
+•	Réserver le vol sélectionné en remplissant ses données (nom , etc .) (indication prix fixe un seul passager adulte – sans bagage – sans réductions- 10kg de bagage fixe )
+•	Télécharger le ticket du vol réservé (contenant les informations perso)
+•	Stocker les données du passager dans la base de données.
+•	Affichage d’une liste fixe des vols dans la page d’accueil.
+•	Sélectionner un vol de cette liste et afficher ses informations.
+•	Calcul du prix selon le nombre de passager.
+•	Calcul de prix selon le poids du bagage (+10kg = 10 euros, max = +40 kg)
+•	Modifier les infos saisies dans le ticket.
+•	Rechercher un vol dans la page d’accueil.
+•	Filtrer les vols selon les aéroports de départ et d’arrivée.
+•	Page Admin qui peut consulter les passagers d’un vol
+•	Page Admin qui peut ajouter un vol affiché dans la page d’accueil.
+•	Page Admin qui peut modifier un vol affiché dans la page d’accueil.
+•	Page Admin qui peut supprimer un vol.
+•	Page de login de l’admin.
+
+Rechercher des APIs qui permettent la recherche des vols et filtrage à partir des sites de compagnies aériennes .
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
