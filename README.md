@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank">Backlog :</p>
+<p align="center"><a href="https://laravel.com" target="_blank">Backlog Product:</p>
 
 •	Afficher un seul vol dans la page d’accueil
 •	 Sélectionner ce vol pour se ramener sur une autre page qui afficher ses informations 
