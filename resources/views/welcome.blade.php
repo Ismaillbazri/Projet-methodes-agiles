@@ -117,7 +117,7 @@
             <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
               <div class="icon "><i class="bi bi-airplane-engines"></i></div>
               <div class="row ">
-              <h4 class="title"><a href="">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
+              <h4 class="title"><a href="{{route('InfoVol')}}">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
               </div>
               <p class="description"> Jeudi 06 October </p>
               <p class="description blue"> 8h00 - 10h00</p>
