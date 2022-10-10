@@ -9,7 +9,7 @@
   <!-- Favicons --> 
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
+<link href="//netdna.bootstrapcdn.com/font-awesome/6.2.0/css/font-awesome.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -20,7 +20,13 @@
   <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
 
+<!--animate.css-->
+
+<link rel="stylesheet" href="css/style1.css" />
+
+<!--responsive.css-->
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -100,11 +106,84 @@
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
       </div> -->
+      <div class="mouse_scroll">
+
+		<div class="mouse">
+			<div class="wheel"></div>
+		</div>
+		<div>
+			<span class="m_scroll_arrows unu"></span>
+			<span class="m_scroll_arrows doi"></span>
+			<span class="m_scroll_arrows trei"></span>
+		</div>
+</div>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
+  <section id="service" class="service">
+			<div class="container ">
+        
+				<div class="service-counter text-center d-flex">
 
+					<div class="col-md-4 col-sm-4">
+						<div class="single-service-box">
+							<div class="service-img">
+								<img src="img/service/s1.png" alt="service-icon" />
+							</div><!--/.service-img-->
+							<div class="service-content">
+								<h2>
+									<a href="#">
+									Les vols les moins chers
+									</a>
+								</h2>
+								<p>Voyager la plus longue distance au prix le moins cher.</p>
+							</div><!--/.service-content-->
+						</div><!--/.single-service-box-->
+					</div><!--/.col-->
+
+					<div class="col-md-4 col-sm-4">
+						<div class="single-service-box">
+							<div class="service-img">
+								<img src="img/service/s2.png" alt="service-icon" />
+							</div><!--/.service-img-->
+							<div class="service-content">
+								<h2>
+									<a href="#">
+										Les vols les plus confortable
+									</a>
+								</h2>
+								<p>Vous trouverez chez nous des vols avec des facilités premium.
+                </p>
+							</div><!--/.service-content-->
+						</div><!--/.single-service-box-->
+					</div><!--/.col-->
+
+					<div class="col-md-4 col-sm-4">
+						<div class="single-service-box">
+							<div class="statistics-img">
+								<img src="img/service/s3.png" alt="service-icon" />
+							</div><!--/.service-img-->
+							<div class="service-content">
+
+								<h2>
+									<a href="#">
+										Les vols les plus rapides
+									</a>
+								</h2>
+								<p>Nos vols sont les plus rapides comparés aux autres compagnies.</p>
+							</div><!--/.service-content-->
+						</div><!--/.single-service-box-->
+					</div><!--/.col-->
+
+				</div><!--/.statistics-counter-->	
+			</div><!--/.container-->
+
+		</section><!--/.service-->
+		<!--service end-->
+    <div class="container">
+    <hr class="solid">
+    </div>
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
@@ -112,59 +191,54 @@
             <h3>Vols <span>disponibles</span></h3>
 
           
-<<<<<<< HEAD
           <p>Réservez votre vol dés maintenant !</p>
         </div></div>
-        <div class="container  d-flex">
-        <div class="col-sm-4">
-        <div class="card">
-=======
-          <p>Réservez votre vol dès maintenant !</p>
-        </div>
+        <div class="container  ">
+       <div class="packages-content">
         <div class="row">
->>>>>>> 2184250b17926130008d8a15d2c14c3839ba2c60
-          <div class=" mb-5 mb-lg-0">
-            <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
-              <div class="icon "><i class="bi bi-airplane-engines"></i></div>
-              <div class="row ">
-              <h4 class="title"><a href="{{route('InfoVol')}}">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
-              </div>
-              <p class="description"> Jeudi 06 October </p>
-              <p class="description blue"> 8h00 - 10h00</p>
-            </div> 
-          </div>
-        </div>
-        </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class=" mb-5 mb-lg-0">
-            <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
-              <div class="icon "><i class="bi bi-airplane-engines"></i></div>
-              <div class="row ">
-              <h4 class="title"><a href="{{route('InfoVol')}}">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
-              </div>
-              <p class="description"> Jeudi 06 October </p>
-              <p class="description blue"> 8h00 - 10h00</p>
-            </div> 
-          </div>
-        </div>
-        </div>
-      
-      <div class="col-sm-4">
-        <div class="card">
-          <div class=" mb-5 mb-lg-0">
-            <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
-              <div class="icon "><i class="bi bi-airplane-engines"></i></div>
-              <div class="row ">
-              <h4 class="title"><a href="{{route('InfoVol')}}">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
-              </div>
-              <p class="description"> Jeudi 06 October </p>
-              <p class="description blue"> 8h00 - 10h00</p>
-            </div> 
-          </div>
-        </div>
-        </div>
-      </div>
+          @foreach ($vols as $vol)
+						<div class="col-md-4 col-sm-6">
+							<div class="single-package-item">
+								<img src="{{$vol->Duree}}" alt="package-place">
+								<div class="single-package-item-txt">
+									<h3>{{$vol->Depart}} <i class="bi bi-airplane-engines"></i> {{$vol->Arrivee}}  <span class="pull-right">${{$vol->Prix}}</span></h3>
+									<div class="packages-para">
+										<p>
+											<span>
+                      <i class="bi bi-alarm"></i> {{$vol->HeureDepart}} - {{$vol->HeureArrivee}}
+											</span>
+											<i class="bi bi-star-fill"></i> 5 star accomodation
+										</p>
+										<p>
+											<span>
+                      <i class="bi bi-calendar"></i> {{$vol->Date}}
+											</span>
+											<i class="bi bi-bookmark-plus"></i> food facilities
+										 </p>
+									</div><!--/.packages-para-->
+									<div class="packages-review">
+										<p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+											<span>2544 review</span>
+										</p>
+									</div><!--/.packages-review-->
+									<div class="about-btn">
+										<a href="{{route('InfoVol')}}">											<button  class="about-view packages-btn">
+                    book now										</button>
+                      </a>
+									</div><!--/.about-btn-->
+								</div><!--/.single-package-item-txt-->
+							</div><!--/.single-package-item-->
+
+						</div><!--/.col-->
+        @endforeach
+        </div><!--/.col-->
+        </div><!--/.col-->
+
       </div>
     </div>      </div>
 
@@ -179,9 +253,8 @@
 
   </main><!-- End #main -->
 
- <!--  ======= Footer ======= 
   <footer id="footer">
-
+ <!--
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
@@ -247,22 +320,22 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Straightfly-app</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
+        <!-- All the links in the footer should remain intact.
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-      <!--  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    Designed using <a href="https://bootstrap.com/">Bootstrap</a> 
       </div>
     </div>
-<<<<<<< HEAD
-  </footer><!-- End Footer -->
+
+  </footer>
   
 
   <div id="preloader"></div>

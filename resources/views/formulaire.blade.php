@@ -159,14 +159,24 @@
     </div>
     <div class="col-md-3 mb-3">
 
-    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Number of passengers</label>
-    <select class="custom-select my-1 mr-sm-2" id="validationCustom06" name="validationCustom06">
-      <option selected>.</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
+      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Number of passengers</label>
+      <select class="custom-select my-1 mr-sm-2" id="validationCustom06" name="validationCustom06">
+        <option selected>.</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div>
+      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Bagages</label>
+      <select class="custom-select my-1 mr-sm-2" id="validationCustom07" name="validationCustom07">
+        <option selected>.</option>
+        <option value="10">+10</option>
+        <option value="20">+20</option>
+        <option value="30">+30</option>
+        <option value="40">+40</option>
     </select>
-  </div>
+    </div>
   </div>
   <div class="form-group">
   <div class="col-md-3 mb-3">

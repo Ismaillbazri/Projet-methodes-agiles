@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InfoVolController;
 use App\Http\Controllers\reserver;
 use App\Http\Controllers\Ticket;
+use App\Http\Controllers\Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,14 +16,23 @@ use App\Http\Controllers\Ticket;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/',[Controller::class,'index'])
+                 ->name('Acceuil');
 
 Route::get('/InfoVol',[InfoVolController::class,'index'])
                  ->name('InfoVol');
+
+
+
 Route::get('/Réserver',[reserver::class,'index'])
                  ->name('réserver');
+
+
 Route::post('/ticket',[Ticket::class,'store'])
                  ->name('ticket');
                 
+
