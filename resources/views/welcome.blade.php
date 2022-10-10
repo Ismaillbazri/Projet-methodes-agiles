@@ -217,11 +217,11 @@
       <!--  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-<<<<<<< HEAD
+
   </footer><! -- End Footer --
   
 
-  </footer> End Footer --> -->
+  </footer> End Footer --> 
 
 
   <div id="preloader"></div>
