@@ -6,7 +6,7 @@
 
         <title>Straight-fly</title>
        
-  <!-- Favicons -->
+  <!-- Favicons --> 
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -54,7 +54,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Straight <span>Fly </span></a></h1>
+      <h1 class="logo"><a href="/">Straight <span>Fly </span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>-->
 
@@ -108,11 +108,13 @@
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
       <div class="section-title">
-            <h3>Vols<span>disponibles</span></h3>
+            <h3>Vols <span>disponibles</span></h3>
           
           <p>Réservez votre vol dés maintenant !</p>
-        </div>
-        <div class="row">
+        </div></div>
+        <div class="container  d-flex">
+        <div class="col-sm-4">
+        <div class="card">
           <div class=" mb-5 mb-lg-0">
             <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
               <div class="icon "><i class="bi bi-airplane-engines"></i></div>
@@ -124,8 +126,44 @@
             </div> 
           </div>
         </div>
-
+        </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class=" mb-5 mb-lg-0">
+            <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
+              <div class="icon "><i class="bi bi-airplane-engines"></i></div>
+              <div class="row ">
+              <h4 class="title"><a href="{{route('InfoVol')}}">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
+              </div>
+              <p class="description"> Jeudi 06 October </p>
+              <p class="description blue"> 8h00 - 10h00</p>
+            </div> 
+          </div>
+        </div>
+        </div>
+      
+      <div class="col-sm-4">
+        <div class="card">
+          <div class=" mb-5 mb-lg-0">
+            <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
+              <div class="icon "><i class="bi bi-airplane-engines"></i></div>
+              <div class="row ">
+              <h4 class="title"><a href="{{route('InfoVol')}}">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
+              </div>
+              <p class="description"> Jeudi 06 October </p>
+              <p class="description blue"> 8h00 - 10h00</p>
+            </div> 
+          </div>
+        </div>
+        </div>
       </div>
+      </div>
+    </div>      </div>
+
+       
+    
+    
+    </div>
     </section><!-- End Featured Services Section -->
 
     <!-- ======= About Section ======= -->
