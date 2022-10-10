@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InfoVolController;
-
+use App\Http\Controllers\reserver;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::get('/InfoVol',[InfoVolController::class,'index'])
                  ->name('InfoVol');
+Route::get('/Réserver',[reserver::class,'index'])
+                 ->name('réserver');
