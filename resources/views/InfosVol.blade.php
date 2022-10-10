@@ -108,7 +108,7 @@
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
       <div class="section-title">
-            <h3>Vols <span>disponibles</span></h3>
+            <h3>Informations du <span>Vol</span></h3>
           
           <p>Réservez votre vol dés maintenant !</p>
         </div>
@@ -134,7 +134,7 @@
                         <td>3h</td>
                         <td>14/01/2024</td>
                         <td>300  €</td>
-                        <td><a href=""><button type="submit">Reserver</button></a></td>
+                        <td><a href="{{route('réserver')}}"><button type="submit">Reserver</button></a></td>
                     </tr>
                 </tbody>
             </table>
