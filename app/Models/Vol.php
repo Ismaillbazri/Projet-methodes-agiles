@@ -14,8 +14,5 @@ class Vol extends Model
         return $this->belongsToMany(Client::class, 'vol_clients');
     }
 
-    public function date()
-    {
-        return $this->belongsTo(Date::class);
-    }
+
 }

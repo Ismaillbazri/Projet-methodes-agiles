@@ -113,15 +113,16 @@
           
           <p>Réservez votre vol dés maintenant !</p>
         </div>
+        @foreach ($vols as $vol)
         <div class="row">
           <div class=" mb-5 mb-lg-0">
             <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
               <div class="icon "><i class="bi bi-airplane-engines"></i></div>
               <div class="row ">
-              <h4 class="title"><a href="{{route('InfoVol')}}">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
+              <h4 class="title"><a href="{{route('InfoVol')}}">{{$vol->Depart}} <span ><i class="bi bi-airplane-fill"></i></span> {{$vol->Arrivee}} </h4>
               </div>
-              <p class="description"> Jeudi 06 October </p>
-              <p class="description blue"> 8h00 - 10h00</p>
+              <p class="description"> {{$vol->date}} </p>
+              <p class="description blue"> {{$vol->HeureDepart}} - {{$vol->HeureArrivee}}</p>
             </div> 
           </div>
         </div>
@@ -217,12 +218,12 @@
       </div>
     </div>
 <<<<<<< HEAD
-  </footer><!-- End Footer -->
+  </footer><! -- End Footer -->
   
 =======
   </footer> End Footer --> -->
 
->>>>>>> 763af2397981791667fb15e0f16b95078336c53e
+
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
