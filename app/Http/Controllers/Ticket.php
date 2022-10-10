@@ -35,13 +35,16 @@ class Ticket extends Controller
     public function store(Request $request)
     {
         $r1 = $request->validationCustom01;
-        $r2 = $request->validationCustom01;
-        $r3 = $request->validationCustom01;
-        $r4 = $request->validationCustom01;
-        $r5 = $request->validationCustom01;
+        $r2 = $request->validationCustom02;
+        $r3 = $request->validationCustom03;
+        $r4 = $request->validationCustom04;
+        $r5 = $request->validationCustom05;
+        $r6 = $request->validationCustom06;
+        $prixUnit = 300;
+        $prix = $r6 * $prixUnit;
         
 
-        return view("ticket",compact('r1','r2','r3','r4','r5'));
+        return view("ticket",compact('r1','r2','r3','r4','r5','r6','prix'));
     }
 
     /**

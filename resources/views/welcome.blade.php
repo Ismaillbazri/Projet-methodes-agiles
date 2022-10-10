@@ -111,7 +111,7 @@
       <div class="section-title">
             <h3>Vols<span> disponibles</span></h3>
           
-          <p>Réservez votre vol dés maintenant !</p>
+          <p>Réservez votre vol dès maintenant !</p>
         </div>
         @foreach ($vols as $vol)
         <div class="row">
