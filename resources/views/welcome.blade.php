@@ -108,7 +108,7 @@
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
       <div class="section-title">
-            <h3>Vols<span>disponibles</span></h3>
+            <h3>Vols<span> disponibles</span></h3>
           
           <p>Réservez votre vol dés maintenant !</p>
         </div>
