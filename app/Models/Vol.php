@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Vol extends Model
+{
+    use HasFactory;
+
+    public function clients()
+    {
+        return $this->belongsToMany(Client::class, 'vol_clients');
+    }
+
+    public function date()
+    {
+        return $this->belongsTo(Date::class);
+    }
+}
