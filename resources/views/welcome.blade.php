@@ -119,7 +119,7 @@
             <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
               <div class="icon "><i class="bi bi-airplane-engines"></i></div>
               <div class="row ">
-              <h4 class="title"><a href="{{route('InfoVol')}}">{{$vol->Depart}} <span ><i class="bi bi-airplane-fill"></i></span> {{$vol->Arrivee}} </h4>
+              <h4 class="title"><a href="{{route('InfoVol',$vol->id)}}">{{$vol->Depart}} <span ><i class="bi bi-airplane-fill"></i></span> {{$vol->Arrivee}} </h4>
               </div>
               <p class="description"> {{$vol->Date}} </p>
               <p class="description blue"> {{$vol->HeureDepart}} - {{$vol->HeureArrivee}}</p>

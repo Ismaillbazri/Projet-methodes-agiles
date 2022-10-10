@@ -23,7 +23,7 @@ use App\Http\Controllers\Controller;
 Route::get('/',[Controller::class,'index'])
                  ->name('Acceuil');
 
-Route::get('/InfoVol',[InfoVolController::class,'index'])
+Route::get('/InfoVol/{id}',[InfoVolController::class,'show'])
                  ->name('InfoVol');
 
 

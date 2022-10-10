@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Vol;
+
 
 class InfoVolController extends Controller
 {
@@ -13,7 +15,7 @@ class InfoVolController extends Controller
      */
     public function index()
     {
-        return view("InfosVol");
+        
     }
 
     /**
@@ -34,7 +36,8 @@ class InfoVolController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $Vol=Request;
+        return view("InfosVol",compact("Vol"));
     }
 
     /**
@@ -45,7 +48,8 @@ class InfoVolController extends Controller
      */
     public function show($id)
     {
-        //
+        $vol=Vol::find($id);
+        return view("InfosVol",compact('vol'));
     }
 
     /**
@@ -54,9 +58,9 @@ class InfoVolController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($volNum)
     {
-        //
+        
     }
 
     /**

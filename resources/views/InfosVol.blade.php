@@ -116,7 +116,7 @@
         <table >
                 <thead>
                     <tr>
-                        <td >Nom vol</td>
+                        <td>Numéro du vol</td>
                         <td>Départ</td>
                         <td>Arrivée</td>
                         <td>Compagnie</td>
@@ -127,13 +127,13 @@
                 </thead> 
                 <tbody>
                     <tr>
-                        <td>Vol 1</td>
-                        <td>Marrakech</td>
-                        <td>Paris</td>
-                        <td>RoyalAirMaroc</td>
-                        <td>3h</td>
-                        <td>14/01/2024</td>
-                        <td>300  €</td>
+                        <td>{{$vol->NumVol}}</td>
+                        <td>{{$vol->Depart}}</td>
+                        <td>{{$vol->Arrivee}}</td>
+                        <td>{{$vol->Compagnie}}</td>
+                        <td>{{$vol->Duree}}</td>
+                        <td>{{$vol->Date}}</td>
+                        <td>{{$vol->Prix}}€</td>
                         <td><a href="{{route('réserver')}}"><button type="submit">Reserver</button></a></td>
                     </tr>
                 </tbody>
