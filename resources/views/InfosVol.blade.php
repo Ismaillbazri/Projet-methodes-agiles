@@ -108,7 +108,7 @@
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
       <div class="section-title">
-            <h3>Vols<span>disponibles</span></h3>
+            <h3>Informations du <span>Vol</span></h3>
           
           <p>Réservez votre vol dés maintenant !</p>
         </div>
@@ -134,7 +134,7 @@
                         <td>3h</td>
                         <td>14/01/2024</td>
                         <td>300  €</td>
-                        <td><a href=""><button type="submit">Reserver</button></a></td>
+                        <td><a href="{{route('réserver')}}"><button type="submit">Reserver</button></a></td>
                     </tr>
                 </tbody>
             </table>
@@ -148,7 +148,7 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
+  <!-- ======= Footer =======
   <footer id="footer">
 
     <div class="footer-newsletter">
@@ -227,10 +227,10 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <!--   Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>End Footer --> 
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

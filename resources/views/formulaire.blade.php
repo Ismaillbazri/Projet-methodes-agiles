@@ -58,7 +58,6 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>-->
 
-      
       <nav id="navbar" class="navbar">
        <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -103,36 +102,120 @@
     </div>
   </section><!-- End Hero -->
 
-  <main id="main">
 
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
       <div class="section-title">
-            <h3>Vols<span> disponibles</span></h3>
+            <h3>Réserver le <span>vol</span></h3>
           
           <p>Réservez votre vol dés maintenant !</p>
         </div>
-        <div class="row">
-          <div class=" mb-5 mb-lg-0">
-            <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
-              <div class="icon "><i class="bi bi-airplane-engines"></i></div>
-              <div class="row ">
-              <h4 class="title"><a href="{{route('InfoVol')}}">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
-              </div>
-              <p class="description"> Jeudi 06 October </p>
-              <p class="description blue"> 8h00 - 10h00</p>
-            </div> 
-          </div>
-        </div>
-
+        <div class="falign-items-center">
+        <form action = "{{route('ticket')}}" method="POST" class="needs-validation" novalidate>
+          @csrf
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" name="validationCustom01" placeholder="First name" required>
+      <div class="valid-feedback">
+        Looks good!
       </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" name="validationCustom02" placeholder="Last name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">Email</label>
+      <input type="text" class="form-control" id="validationCustom04" name="validationCustom03" placeholder="Email" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Adress</label>
+      <input type="text" class="form-control" id="validationCustom03" name="validationCustom04" placeholder="Adress" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    
+    
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Postal code</label>
+      <input type="text" class="form-control" id="validationCustom05" name="validationCustom05" placeholder="Postal code" required>
+      <div class="invalid-feedback">
+        Please provide a valid Postal code.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Number of passengers</label>
+  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>.</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  </div>
+  </div>
+  <div class="form-group">
+  <div class="col-md-3 mb-3">
+
+<label class="my-1 mr-2" for="inlineFormCustomSelectPref">le prix à payer est de : <strong>300 euros</strong>  </label>
+
+</div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit" >Submit form</button>
+</form>
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+        </div>  
+      </div>
+      
     </section><!-- End Featured Services Section -->
 
     <!-- ======= About Section ======= -->
     
 
-  </main><!-- End #main -->
 
  <!--  ======= Footer ======= 
   <footer id="footer">
@@ -216,13 +299,8 @@
       <!--  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-<<<<<<< HEAD
-  </footer><!-- End Footer -->
-  
-=======
   </footer> End Footer --> -->
 
->>>>>>> 763af2397981791667fb15e0f16b95078336c53e
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -238,8 +316,6 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
-  
 
- 
 </body>
 </html>
