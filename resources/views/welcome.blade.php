@@ -111,7 +111,7 @@
       <div class="section-title">
             <h3>Vols<span> disponibles</span></h3>
           
-          <p>Réservez votre vol dés maintenant !</p>
+          <p>Réservez votre vol dès maintenant !</p>
         </div>
         <div class="row">
           <div class=" mb-5 mb-lg-0">
