@@ -120,20 +120,28 @@
           <p>{{ $r1 }}</p>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="validationCustom01">Last name</label>
+          <label for="validationCustom02">Last name</label>
           <p>{{ $r2 }}</p>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="validationCustom01">Email</label>
+          <label for="validationCustom03">Email</label>
           <p>{{ $r3 }}</p>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="validationCustom01">Adress</label>
+          <label for="validationCustom04">Adress</label>
           <p>{{ $r4 }}</p>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="validationCustom01">Postal code</label>
+          <label for="validationCustom05">Postal code</label>
           <p>{{ $r5 }}</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom06">Number of Passangers</label>
+          <p>{{ $r6 }}</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>prix</label>
+          <p>{{ $prix }}</p>
         </div>
 </div>
 </div></div>

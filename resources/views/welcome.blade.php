@@ -112,11 +112,17 @@
             <h3>Vols <span>disponibles</span></h3>
 
           
+<<<<<<< HEAD
           <p>Réservez votre vol dés maintenant !</p>
         </div></div>
         <div class="container  d-flex">
         <div class="col-sm-4">
         <div class="card">
+=======
+          <p>Réservez votre vol dès maintenant !</p>
+        </div>
+        <div class="row">
+>>>>>>> 2184250b17926130008d8a15d2c14c3839ba2c60
           <div class=" mb-5 mb-lg-0">
             <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
               <div class="icon "><i class="bi bi-airplane-engines"></i></div>
