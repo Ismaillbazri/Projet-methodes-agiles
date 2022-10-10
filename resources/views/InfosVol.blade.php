@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Straight-fly</title>
+        <title>Straight-fly-InfoVol</title>
        
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -108,21 +108,36 @@
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
       <div class="section-title">
-            <h3>Vols<span> disponibles</span></h3>
+            <h3>Vols<span>disponibles</span></h3>
           
           <p>Réservez votre vol dés maintenant !</p>
         </div>
         <div class="row">
-          <div class=" mb-5 mb-lg-0">
-            <div class="icon-box " data-aos="fade-up" data-aos-delay="100">
-              <div class="icon "><i class="bi bi-airplane-engines"></i></div>
-              <div class="row ">
-              <h4 class="title"><a href="{{route('InfoVol')}}">Paris (CDG) <span ><i class="bi bi-airplane-fill"></i></span> Lille (LESQUIN) </h4>
-              </div>
-              <p class="description"> Jeudi 06 October </p>
-              <p class="description blue"> 8h00 - 10h00</p>
-            </div> 
-          </div>
+        <table >
+                <thead>
+                    <tr>
+                        <td >Nom vol</td>
+                        <td>Départ</td>
+                        <td>Arrivée</td>
+                        <td>Compagnie</td>
+                        <td>Durée</td>
+                        <td>Date</td>
+                        <td>Prix</td>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr>
+                        <td>Vol 1</td>
+                        <td>Marrakech</td>
+                        <td>Paris</td>
+                        <td>RoyalAirMaroc</td>
+                        <td>3h</td>
+                        <td>14/01/2024</td>
+                        <td>300  €</td>
+                        <td><a href=""><button type="submit">Reserver</button></a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
       </div>
