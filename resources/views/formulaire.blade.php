@@ -132,7 +132,7 @@
     <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">Email</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Email" required>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Email" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -141,8 +141,8 @@
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label for="validationCustom03">City</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+      <label for="validationCustom03">Adress</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Adress" required>
       <div class="invalid-feedback">
         Please provide a valid city.
       </div>
@@ -150,10 +150,10 @@
     
     
     <div class="col-md-3 mb-3">
-      <label for="validationCustom05">Zip</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+      <label for="validationCustom05">Postal code</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Postal code" required>
       <div class="invalid-feedback">
-        Please provide a valid zip.
+        Please provide a valid Postal code.
       </div>
     </div>
     <div class="col-md-3 mb-3">
