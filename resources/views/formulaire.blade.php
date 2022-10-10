@@ -112,11 +112,12 @@
           <p>Réservez votre vol dés maintenant !</p>
         </div>
         <div class="falign-items-center">
-        <form class="needs-validation" novalidate>
+        <form action = "{{route('ticket')}}" method="POST" class="needs-validation" novalidate>
+          @csrf
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+      <input type="text" class="form-control" id="validationCustom01" name="validationCustom01" placeholder="First name" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -124,7 +125,7 @@
 
     <div class="col-md-4 mb-3">
       <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+      <input type="text" class="form-control" id="validationCustom02" name="validationCustom02" placeholder="Last name" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -132,7 +133,7 @@
     <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">Email</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="Email" required>
+      <input type="text" class="form-control" id="validationCustom04" name="validationCustom03" placeholder="Email" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -142,7 +143,7 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom03">Adress</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="Adress" required>
+      <input type="text" class="form-control" id="validationCustom03" name="validationCustom04" placeholder="Adress" required>
       <div class="invalid-feedback">
         Please provide a valid city.
       </div>
@@ -151,7 +152,7 @@
     
     <div class="col-md-3 mb-3">
       <label for="validationCustom05">Postal code</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="Postal code" required>
+      <input type="text" class="form-control" id="validationCustom05" name="validationCustom05" placeholder="Postal code" required>
       <div class="invalid-feedback">
         Please provide a valid Postal code.
       </div>
@@ -183,8 +184,9 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
+  <button class="btn btn-primary" type="submit" >Submit form</button>
 </form>
+
 
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
