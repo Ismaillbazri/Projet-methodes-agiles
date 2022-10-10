@@ -134,6 +134,10 @@
           <p>{{ $r6 }}</p>
         </div>
         <div class="col-md-4 mb-3">
+          <label for="validationCustom07">Bagages</label>
+          <p>{{ $r7 }}</p>
+        </div>
+        <div class="col-md-4 mb-3">
           <label>prix</label>
           <p>{{ $prix }}</p>
         </div>

@@ -40,11 +40,12 @@ class Ticket extends Controller
         $r4 = $request->validationCustom04;
         $r5 = $request->validationCustom05;
         $r6 = $request->validationCustom06;
+        $r7 = $request->validationCustom07;
         $prixUnit = 300;
-        $prix = $r6 * $prixUnit;
+        $prix = $r6 * $prixUnit + $r7;
         
 
-        return view("ticket",compact('r1','r2','r3','r4','r5','r6','prix'));
+        return view("ticket",compact('r1','r2','r3','r4','r5','r6','r7','prix'));
     }
 
     /**
