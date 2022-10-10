@@ -13,7 +13,7 @@ class CreateVolClientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('vol__clients', function (Blueprint $table) {
+        Schema::create('vol_clients', function (Blueprint $table) {
             $table->id();
             $table->integer('vol_id')->unsigned();
             $table->integer('client_id')->unsigned();

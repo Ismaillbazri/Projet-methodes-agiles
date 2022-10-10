@@ -36,8 +36,7 @@ class InfoVolController extends Controller
      */
     public function store(Request $request)
     {
-        $Vol=Request;
-        return view("InfosVol",compact("Vol"));
+        
     }
 
     /**

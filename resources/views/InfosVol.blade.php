@@ -134,7 +134,7 @@
                         <td>{{$vol->Duree}}</td>
                         <td>{{$vol->Date}}</td>
                         <td>{{$vol->Prix}}€</td>
-                        <td><a href="{{route('réserver')}}"><button type="submit">Reserver</button></a></td>
+                        <td><a href="{{route('réserver',$vol->id)}}"><button type="submit">Reserver</button></a></td>
                     </tr>
                 </tbody>
             </table>

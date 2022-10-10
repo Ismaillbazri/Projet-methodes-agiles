@@ -28,11 +28,14 @@ Route::get('/InfoVol/{id}',[InfoVolController::class,'show'])
 
 
 
-Route::get('/Réserver',[reserver::class,'index'])
+/*Route::get('/Réserver',[reserver::class,'index'])
+                 ->name('réserver');*/
+
+Route::get('/Réserver/{id}',[reserver::class,'show'])
                  ->name('réserver');
 
 
-Route::post('/ticket',[Ticket::class,'store'])
+Route::post('/ticket/{id}',[Ticket::class,'store'])
                  ->name('ticket');
                 
 

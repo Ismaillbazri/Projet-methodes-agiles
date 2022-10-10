@@ -110,6 +110,10 @@
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
         <div class="col-md-4 mb-3">
+          <label for="validationCustom01">Numéro du Vol</label>
+          <p>{{ $numvol }}</p>
+        </div>
+        <div class="col-md-4 mb-3">
           <label for="validationCustom01">First name</label>
           <p>{{ $r1 }}</p>
         </div>

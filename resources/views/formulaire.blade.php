@@ -112,9 +112,9 @@
           <p>Réservez votre vol dés maintenant !</p>
         </div>
         <div class="falign-items-center">
-        <form action = "{{route('ticket')}}" method="POST" class="needs-validation" novalidate>
+        <form action = "{{route('ticket',$vol->id)}}" method="POST" class="needs-validation" novalidate>
           @csrf
-  <div class="form-row">
+  <div class="form-row"> 
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">First name</label>
       <input type="text" class="form-control" id="validationCustom01" name="validationCustom01" placeholder="First name" required>
@@ -133,7 +133,7 @@
     <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">Email</label>
-      <input type="text" class="form-control" id="validationCustom04" name="validationCustom03" placeholder="Email" required>
+      <input type="text" class="form-control" id="validationCustom03" name="validationCustom03" placeholder="Email" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -143,7 +143,7 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom03">Adress</label>
-      <input type="text" class="form-control" id="validationCustom03" name="validationCustom04" placeholder="Adress" required>
+      <input type="text" class="form-control" id="validationCustom04" name="validationCustom04" placeholder="Adress" required>
       <div class="invalid-feedback">
         Please provide a valid city.
       </div>
@@ -181,7 +181,7 @@
   <div class="form-group">
   <div class="col-md-3 mb-3">
 
-<label class="my-1 mr-2" for="inlineFormCustomSelectPref">le prix à payer est de : <strong>300 euros</strong>  </label>
+<label class="my-1 mr-2" for="inlineFormCustomSelectPref" >le prix à payer est de : <strong>{{$vol->Prix}} euros</strong>  </label>
 
 </div>
     <div class="form-check">
