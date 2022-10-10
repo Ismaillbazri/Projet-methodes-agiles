@@ -21,16 +21,14 @@ Route::get('/', function () {
 
 Route::get('/InfoVol',[InfoVolController::class,'index'])
                  ->name('InfoVol');
-<<<<<<< HEAD
 
 
-=======
+
 Route::get('/Réserver',[reserver::class,'index'])
                  ->name('réserver');
-<<<<<<< HEAD
->>>>>>> 763af2397981791667fb15e0f16b95078336c53e
-=======
+
+
 Route::post('/ticket',[Ticket::class,'store'])
                  ->name('ticket');
                 
->>>>>>> 35869106405f851e41f89001d4697429fab9c905
+
