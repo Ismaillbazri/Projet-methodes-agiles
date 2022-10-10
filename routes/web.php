@@ -16,12 +16,12 @@ use App\Http\Controllers\Controller;
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/', function () {
     return view('welcome');
-});*/
+});
 
-Route::get('/',[Controller::class,'index'])
-                 ->name('Acceuil');
+/*Route::get('/',[Controller::class,'index'])
+                 ->name('Acceuil');*/
 
 Route::get('/InfoVol',[InfoVolController::class,'index'])
                  ->name('InfoVol');
