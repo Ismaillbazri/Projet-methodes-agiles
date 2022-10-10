@@ -58,6 +58,7 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>-->
 
+      
       <nav id="navbar" class="navbar">
        <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -107,6 +108,10 @@
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
+      <div id='sectionAimprimer'>
+        Résultat MySQL ou tableau HTML à imprimer
+      </div>
+      <button onClick="imprimer('sectionAimprimer')">Imprimer</button>
       <div class="section-title">
             <h3>Vols<span> disponibles</span></h3>
           
@@ -216,7 +221,7 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-
+  
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -232,6 +237,16 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  
 
+  <script>
+    function imprimer(divName) {
+          var printContents = document.getElementById(divName).innerHTML;    
+      var originalContents = document.body.innerHTML;      
+      document.body.innerHTML = printContents;     
+      window.print();     
+      document.body.innerHTML = originalContents;
+      }
+  </script>
 </body>
 </html>
