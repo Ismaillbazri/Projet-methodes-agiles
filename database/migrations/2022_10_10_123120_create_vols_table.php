@@ -23,6 +23,7 @@ class CreateVolsTable extends Migration
             $table->string('HeureDepart',200);
             $table->string('HeureArrivee',200);
             $table->string('Date',200);
+            $table->string('Compagnie',200);
             //$table->integer('date_id')->unsigned();
             //$table->foreign('date_id')->references('id')->on('dates')->onDelete('cascade');
             $table->timestamps();

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Client;
+use App\Models\Vol;
 class Ticket extends Controller
 {
     /**
@@ -11,7 +12,7 @@ class Ticket extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index() 
     {
         
     }
@@ -32,8 +33,10 @@ class Ticket extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,$id)
     {
+        $vol=Vol::find($id);
+
         $r1 = $request->validationCustom01;
         $r2 = $request->validationCustom02;
         $r3 = $request->validationCustom03;
@@ -41,11 +44,26 @@ class Ticket extends Controller
         $r5 = $request->validationCustom05;
         $r6 = $request->validationCustom06;
         $r7 = $request->validationCustom07;
-        $prixUnit = 300;
+        //$r8 = $request->validationCustom08;
+        $prixUnit = $vol->Prix;
         $prix = $r6 * $prixUnit + $r7;
+
+        $client=new Client();
+        $client->First_name=$r1;
+        $client->Last_Name=$r2;
+        $client->email=$r3;
+        $client->Adress=$r4;
+        $client->Postal_Code=$r5;
+        $client->save();
+
+        $clientid=$client->id;
+        
+        $clt=Client::Find($clientid);
+        $clt->vols()->attach($vol->id);
+        $numvol=$vol->NumVol;
         
 
-        return view("ticket",compact('r1','r2','r3','r4','r5','r6','r7','prix'));
+        return view("ticket",compact('r1','r2','r3','r4','r5','r6','r7','prix','numvol'));
     }
 
     /**

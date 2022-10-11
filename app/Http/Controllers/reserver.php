@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Vol;
 
 class reserver extends Controller
 {
@@ -33,7 +34,7 @@ class reserver extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    { 
         //
     }
 
@@ -45,7 +46,8 @@ class reserver extends Controller
      */
     public function show($id)
     {
-        //
+        $vol=Vol::find($id);
+        return view("formulaire",compact('vol'));
     }
 
     /**

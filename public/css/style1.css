@@ -811,12 +811,7 @@ font-family: 'Poppins', sans-serif;
 /*-------------------------------------
         10.  Special-Offer
 --------------------------------------*/
-.special-offer{
-    position: relative;
-    background: url(../../assets/images/offer/offer-banner.jpg)no-repeat center;
-    background-size: cover;
-    z-index: 1;
-}
+
 .special-offer:after{
     position: absolute;
     content: "";
@@ -824,29 +819,11 @@ font-family: 'Poppins', sans-serif;
     left:0;
     width: 100%;
     height: 100%;
-    background: rgba(0,216,255,.6);
+    background: rgba(1, 31, 66, 0.661);
     z-index: -1;
 }
 
-/*.single-special-offer-bg*/
-.single-special-offer-bg {
-    margin-top: -1px;
-    position: relative;
-    padding-bottom: 42px;
-    z-index: -1;
-}
-.single-special-offer-bg:before {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,216,255,.7);
-    z-index: 1;
-}
-.single-special-offer-bg img {
-    height: 807px;
-}
+
 
 .single-special-shape-txt {
     position: absolute;
@@ -885,7 +862,7 @@ font-family: 'Poppins', sans-serif;
     padding: 172px 0 0;
 }
 .single-special-offer h2{
-    color: #74eaff;
+    color: #f0fdff;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;

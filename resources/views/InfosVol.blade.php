@@ -15,14 +15,16 @@
 
   <!-- Vendor CSS Files -->
   <link href="vendor/aos/aos.css" rel="stylesheet">
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/style1.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: BizLand - v3.9.0
@@ -91,50 +93,108 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Bienvenu à <span>Straight Fly</span></h1>
-      <h2>Nous vous aidons à trouver des vols pas chers  à n'importe quelle destination !</h2>
-      <!-- <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-      </div> -->
-    </div>
-  </section><!-- End Hero -->
+
 
   <main id="main">
+	<!--special-offer start-->
+  <style>
+    .special-offer{
+    position: relative;
+    background: url("{{$vol->Duree}}")no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    height:100%;
+}
+  </style>
+  <section class="special-offer ">
+			<div class="container ">
+				<div class="special-offer-content ">
+					<div class="row ">
+						<div class="col-sm-8 ">
+									<h2 class="text-white">{{$vol->Depart}} <i class="bi bi-airplane-engines"></i> {{$vol->Arrivee}}</h2>
+									<div class="packages-review special-offer-review">
+						
+									</div><!--/.packages-review-->
+									<div class="packages-para special-offer-para">
+										<p>
+                    <span>
+                      <i class="bi bi-alarm"></i> {{$vol->HeureDepart}} - {{$vol->HeureArrivee}}
+											</span>
+											<i class="bi bi-star-fill"></i> 5 star accomodation
+										</p>
+										<p>
+											<span>
+                      <i class="bi bi-calendar"></i> {{$vol->Date}}
+											</span>
+											<i class="bi bi-bookmark-plus"></i> food facilities
+										 </p>
+									</div><!--/.packages-para-->
+									<div class="packages-review">
+										<p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+										</p>
+										
+									</div><!--/.packages-para-->
+									<div class="offer-btn-group">
+										
+										<div class="about-btn">
+                  
+										</div><!--/.about-btn-->
+									</div><!--/.offer-btn-group-->
+								</div><!--/.single-special-offer-txt-->
+							</div><!--/.single-special-offer-->
+						</div><!--/.col-->
 
+					</div><!--/.row-->
+				</div><!--/.special-offer-content-->
+			</div><!--/.container-->
+
+		</section><!--/.special-offer end-->
     <!-- ======= Featured Services Section ======= -->
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+            <h3>Détails du <span>vol</span></h3>
+
+          
+          <p>Quelques infos utils</p>
+        </div></div>
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
-      <div class="section-title">
-            <h3>Informations du <span>Vol</span></h3>
-          
-          <p>Réservez votre vol dés maintenant !</p>
-        </div>
+    
         <div class="row">
         <table >
                 <thead>
                     <tr>
-                        <td >Nom vol</td>
+                        <td>Numéro du vol</td>
                         <td>Départ</td>
                         <td>Arrivée</td>
                         <td>Compagnie</td>
-                        <td>Durée</td>
                         <td>Date</td>
+                        <td>   </td>
                         <td>Prix</td>
+                        <td>   </td>
+
                     </tr>
                 </thead> 
                 <tbody>
                     <tr>
-                        <td>Vol 1</td>
-                        <td>Marrakech</td>
-                        <td>Paris</td>
-                        <td>RoyalAirMaroc</td>
-                        <td>3h</td>
-                        <td>14/01/2024</td>
-                        <td>300  €</td>
-                        <td><a href="{{route('réserver')}}"><button type="submit">Reserver</button></a></td>
+                        <td>{{$vol->NumVol}}</td>
+                        <td>{{$vol->Depart}}</td>
+                        <td>{{$vol->Arrivee}}</td>
+                        <td>{{$vol->Compagnie}}</td>
+                        <td>{{$vol->Date}}</td>
+                        <td>          </td>
+                        <td>{{$vol->Prix}}€</td>
+                        <td>    </td>
+
+                        <td>  <a href="{{route('réserver',$vol->id)}}">
+											<button  class="about-view packages-btn">
+												book now
+											</button></a></td>
                     </tr>
                 </tbody>
             </table>
@@ -148,10 +208,10 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer =======
+  <!-- ======= Footer =======--> 
   <footer id="footer">
 
-    <div class="footer-newsletter">
+    <!-- <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -166,7 +226,7 @@
     </div>
 
     <div class="footer-top">
-      <div class="container">
+    <!--  <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
@@ -216,7 +276,7 @@
 
         </div>
       </div>
-    </div>
+    </div>--> 
 
     <div class="container py-4">
       <div class="copyright">
@@ -227,12 +287,12 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-      <!--   Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <!--   Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>--> 
+          Designed using <a href="https://bootstrap.com/">Bootstrap</a> 
+
       </div>
     </div>
-  </footer>End Footer --> 
-
-  <div id="preloader"></div>
+  </footer>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
