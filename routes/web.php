@@ -5,6 +5,7 @@ use App\Http\Controllers\InfoVolController;
 use App\Http\Controllers\reserver;
 use App\Http\Controllers\Ticket;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\VolAdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,5 +38,12 @@ Route::get('/Réserver/{id}',[reserver::class,'show'])
 
 Route::post('/ticket/{id}',[Ticket::class,'store'])
                  ->name('ticket');
+
+Route::get('/Admin',[VolAdminController::class,'index'])
+                 ->name('IndexAdminVol');
+
+Route::post('/EnregistrerVol',[VolAdminController::class,'store'])
+                 ->name('EnregistrerVol');
+                
                 
 

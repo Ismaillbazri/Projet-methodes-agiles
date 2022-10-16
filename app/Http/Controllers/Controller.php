@@ -14,7 +14,7 @@ class Controller extends BaseController
 
     public function index()
     {
-        $vols=DB::table('vols')->paginate(4);
+        $vols=DB::table('vols')->get();
         return view("welcome",compact("vols"));
     }
 }
