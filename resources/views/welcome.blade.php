@@ -191,8 +191,15 @@
           
           <p>Réservez votre vol dés maintenant !</p>
         </div></div>
+        
         <div class="container  ">
+       
        <div class="packages-content">
+       <div class="d-flex justify-content-center ">
+		<button class="btn btn-secondary btn-sm">@sortablelink('Prix')</button>
+
+        </div>
+        <br>
         <div class="row">
           @foreach ($vols as $vol)
 						<div class="col-md-4 col-sm-6">
@@ -337,7 +344,6 @@
   </footer>
   
 
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->

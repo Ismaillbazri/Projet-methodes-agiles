@@ -93,7 +93,13 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+  <div class="container" data-aos="fade-up">
+      <div class="section-title">
+            <h3>Détails du <span>vol</span></h3>
 
+          
+          <p>Quelques infos utils</p>
+        </div></div>
 
   <main id="main">
 	<!--special-offer start-->
@@ -155,21 +161,15 @@
 
 		</section><!--/.special-offer end-->
     <!-- ======= Featured Services Section ======= -->
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-            <h3>Détails du <span>vol</span></h3>
-
-          
-          <p>Quelques infos utils</p>
-        </div></div>
+   
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
     
-        <div class="row">
-        <table >
+        <div class="row ">
+        <table  class="table table-sm">
                 <thead>
                     <tr>
-                        <td>Numéro du vol</td>
+                        <th  scope="row">Numéro du vol</td>
                         <td>Départ</td>
                         <td>Arrivée</td>
                         <td>Compagnie</td>
@@ -181,8 +181,8 @@
                     </tr>
                 </thead> 
                 <tbody>
-                    <tr>
-                        <td>{{$vol->NumVol}}</td>
+                    <tr >
+                        <th scope="row">{{$vol->NumVol}}</td>
                         <td>{{$vol->Depart}}</td>
                         <td>{{$vol->Arrivee}}</td>
                         <td>{{$vol->Compagnie}}</td>
@@ -190,15 +190,18 @@
                         <td>          </td>
                         <td>{{$vol->Prix}}€</td>
                         <td>    </td>
-
-                        <td>  <a href="{{route('réserver',$vol->id)}}">
-											<button  class="about-view packages-btn">
-												book now
-											</button></a></td>
                     </tr>
                 </tbody>
+
             </table>
+           
         </div>
+        <br>
+        <div class="d-flex justify-content-center">
+        <a  href="{{route('réserver',$vol->id)}}">
+											<button  class="about-view packages-btn">
+												book now
+											</button></a></div>
 
       </div>
     </section><!-- End Featured Services Section -->
@@ -211,83 +214,13 @@
   <!-- ======= Footer =======--> 
   <footer id="footer">
 
-    <!-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-    <!--  <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>BizLand<span>.</span></h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>--> 
-
+   
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Straightfly</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-      <!--   Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>--> 
+  
           Designed using <a href="https://bootstrap.com/">Bootstrap</a> 
 
       </div>
