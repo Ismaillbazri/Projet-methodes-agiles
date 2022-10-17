@@ -6,27 +6,23 @@
 
         <title>Straight-fly</title>
        
-  <!-- Favicons --> 
-<link href="//netdna.bootstrapcdn.com/font-awesome/6.2.0/css/font-awesome.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="vendor/aos/aos.css" rel="stylesheet">
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-<!--animate.css-->
-
-<link rel="stylesheet" href="css/style1.css" />
-
-<!--responsive.css-->
   <!-- Template Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: BizLand - v3.9.0
@@ -62,7 +58,6 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>-->
 
-      
       <nav id="navbar" class="navbar">
        <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -94,181 +89,170 @@
 
     </div>
   </header><!-- End Header -->
+<style>
+  .login {
+  min-height: 100vh;
+}
 
+.bg-image {
+  background-image: url(' ');
+  opacity:0.7;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+</style>
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Bienvenu à <span>Straight Fly</span></h1>
-      <h2>Nous vous aidons à trouver des vols pas chers  à n'importe quelle destination !</h2>
-      <!-- <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-      </div> -->
-      <div class="mouse_scroll">
-
-		<div class="mouse">
-			<div class="wheel"></div>
-		</div>
-		<div>
-			<span class="m_scroll_arrows unu"></span>
-			<span class="m_scroll_arrows doi"></span>
-			<span class="m_scroll_arrows trei"></span>
-		</div>
-</div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-  <section id="service" class="service">
-			<div class="container ">
-        
-				<div class="service-counter text-center d-flex  ">
-
-					<div class="col-md-4 col-sm-4">
-						<div class="single-service-box">
-							<div class="service-img d-block  d-none d-lg-block d-xl-block">
-								<img src="img/service/s1.png" alt="service-icon" />
-							</div><!--/.service-img-->
-							<div class="service-content">
-								<h2>
-									<a href="#">
-									Les vols les moins chers
-									</a>
-								</h2>
-								<p>Voyager la plus longue distance au prix le moins cher.</p>
-							</div><!--/.service-content-->
-						</div><!--/.single-service-box-->
-					</div><!--/.col-->
-
-					<div class="col-md-4 col-sm-4">
-						<div class="single-service-box">
-							<div class="service-img d-block  d-none d-lg-block d-xl-block">
-								<img src="img/service/s2.png" alt="service-icon" />
-							</div><!--/.service-img-->
-							<div class="service-content">
-								<h2>
-									<a href="#">
-										Les vols les plus confortable
-									</a>
-								</h2>
-								<p>Vous trouverez chez nous des vols avec des facilités premium.
-                </p>
-							</div><!--/.service-content-->
-						</div><!--/.single-service-box-->
-					</div><!--/.col-->
-
-					<div class="col-md-4 col-sm-4">
-						<div class="single-service-box">
-							<div class="statistics-img d-block  d-none d-lg-block d-xl-block">
-								<img src="img/service/s3.png" alt="service-icon" />
-							</div><!--/.service-img-->
-							<div class="service-content">
-
-								<h2>
-									<a href="#">
-										Les vols les plus rapides
-									</a>
-								</h2>
-								<p>Nos vols sont les plus rapides comparés aux autres compagnies.</p>
-							</div><!--/.service-content-->
-						</div><!--/.single-service-box-->
-					</div><!--/.col-->
-
-				</div><!--/.statistics-counter-->	
-			</div><!--/.container-->
-
-		</section><!--/.service-->
-		<!--service end-->
-    <div class="container">
-    <hr class="solid">
-    </div>
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container" data-aos="fade-up">
+  <div class="container-fluid ps-md-0">
+  <div class="row g-0">
+    
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+            <div class="container" data-aos="fade-up">
       <div class="section-title">
-            <h3>Vols <span>disponibles</span></h3>
-
-          
-          <p>Réservez votre vol dés maintenant !</p>
+            <h3>Ajouter un <span>vol</span></h3>
+            
         </div></div>
-        
-        <div class="container  ">
-       
-       <div class="packages-content">
-       <div class="d-flex justify-content-center ">
-    <div class="dropdown">
-  <button class="btn " type="button"  >
-  @sortablelink('Prix')
-</button>
+
+              <!-- Sign In Form -->
+              <div class="falign-items-center">
+        <form action = "{{route('EnregistrerVol')}}" method="POST" class="needs-validation" novalidate>
+          @csrf
+  <div class="form-row"> 
+    <div class="col-md- mb-3">
+      <label for="validationCustom01">Numéro Vol</label>
+      <input type="text" class="form-control" id="validationCustom01" name="validationCustom01" placeholder="Numéro Vol" required>
+      <div class="valid-feedback">
+      Numéro Vol
+      </div>
+    </div>
+    <div class="col-md- mb-3">
+      <label for="validationCustom02">Départ</label>
+      <input type="text" class="form-control" id="validationCustom02" name="validationCustom02" placeholder="Départ" required>
+      <div class="valid-feedback">
+      Départ
+      </div>
+    </div>
+
+    <div class="form-row">
+    <div class="col-md- mb-3">
+      <label for="validationCustom01">Arrivée</label>
+      <input type="text" class="form-control" id="validationCustom03" name="validationCustom03" placeholder="Arrivée" required>
+      <div class="valid-feedback">
+      Arrivée
+      </div>
+    </div>
+    
+  </div>
+  <div class="form-row">
+    <div class="col-md- mb-3">
+      <label for="validationCustom03">Compagnie</label>
+      <input type="text" class="form-control" id="validationCustom04" name="validationCustom04" placeholder="Compagnie" required>
+      <div class="invalid-feedback">
+      Compagnie
+      </div>
+    </div>
+    
+    
+    <div class="col-md- mb-3">
+      <label for="validationCustom05">Date</label>
+      <input type="text" class="form-control" id="validationCustom05" name="validationCustom05" placeholder="Date" required>
+      <div class="invalid-feedback">
+      Date
+      </div>
+    </div>
+
+    <div class="col-md- mb-3">
+      <label for="validationCustom02">Heure de départ</label>
+      <input type="text" class="form-control" id="validationCustom06" name="validationCustom06" placeholder="Heure de départ" required>
+      <div class="valid-feedback">
+      Heure de départ
+      </div>
+    </div>
+
+    <div class="col-md- mb-3">
+      <label for="validationCustom02">Heure d'arrivée</label>
+      <input type="text" class="form-control" id="validationCustom07" name="validationCustom07" placeholder="Heure d'arrivée" required>
+      <div class="valid-feedback">
+      Heure d'arrivée
+      </div>
+    </div>
+
+    <div class="col-md- mb-3">
+      <label for="validationCustom02">Prix</label>
+      <input type="text" class="form-control" id="validationCustom08" name="validationCustom08" placeholder="Prix" required>
+      <div class="valid-feedback">
+      Prix
+      </div>
+    </div>
+
+    <div class="col-md- mb-3">
+      <label for="validationCustom02">Photo</label>
+      <input type="text" class="form-control" id="validationCustom09" name="validationCustom09" placeholder="Photo" required>
+      <div class="valid-feedback">
+      Photo
+      </div>
+    </div>
+
+  <button class="btn btn-primary" type="submit" >Enregistrer</button>
+</form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-        </div>
-        <br>
-        <div class="row">
-          @foreach ($vols as $vol)
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="{{$vol->Duree}}" class="card-img-top  d-block  d-none d-lg-block d-xl-block" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>{{$vol->Depart}} <i class="bi bi-airplane-engines"></i> {{$vol->Arrivee}}  <span class="pull-right">${{$vol->Prix}}</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-                      <i class="bi bi-alarm"></i> {{$vol->HeureDepart}} - {{$vol->HeureArrivee}}
-											</span>
-											<i class="bi bi-star-fill"></i> 5 star accomodation
-										</p>
-										<p >
-											<span>
-                      <i class="bi bi-calendar"></i> {{$vol->Date}}
-											</span>
-											<i class="bi bi-bookmark-plus "></i> food facilities
-										 </p>
-									</div><!--/.packages-para-->
-									<div class="packages-review  d-block  d-none d-lg-block d-xl-block">
-										<p>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-											<span>2544 review</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn ">
-										<a href="{{route('InfoVol',$vol->id)}}">											<button  class="about-view packages-btn">
-                    book now										</button>
-                      </a>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
 
-						</div><!--/.col-->
-      
-        @endforeach
-        
-        </div><!--/.col-->
-        <div class="d-flex justify-content-center">
-                {!! $vols->links('pagination::bootstrap-4') !!}
-            </div>
-        </div><!--/.col-->
 
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+</script>
+        </div>  
       </div>
-    </div>      </div>
-
-       
-    
-    
-    </div>
+      
     </section><!-- End Featured Services Section -->
 
     <!-- ======= About Section ======= -->
     
 
-  </main><!-- End #main -->
 
+ <!--  ======= Footer ======= -->
   <footer id="footer">
- <!--
+ <!-- 
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
@@ -334,23 +318,23 @@
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Straightfly-app</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact.
+        <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-    Designed using <a href="https://bootstrap.com/">Bootstrap</a> 
+      <!--  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      Designed using <a href="https://bootstrap.com/">Bootstrap</a> 
+
       </div>
     </div>
-
-  </footer>
-  
+  </footer> 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -363,11 +347,9 @@
   <script src="vendor/swiper/swiper-bundle.min.js"></script>
   <script src="vendor/waypoints/noframework.waypoints.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
-  <script src="https://kit.fontawesome.com/521ba999f1.js" crossorigin="anonymous"></script>
+
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
-  
 
- 
 </body>
 </html>

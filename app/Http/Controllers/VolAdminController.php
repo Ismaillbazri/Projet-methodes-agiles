@@ -3,18 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Client;
 use App\Models\Vol;
-class Ticket extends Controller
+
+class VolAdminController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     */
-    public function index() 
+     */ 
+    public function index()
     {
-        
+        return view('Admin');
     }
 
     /**
@@ -33,39 +33,36 @@ class Ticket extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,$id)
+    public function store(Request $request)
     {
-        $vol=Vol::find($id);
+        $vol=new Vol();
 
-        $r1 = $request->validationCustom01;
+        /*$r1 = $request->validationCustom01;
         $r2 = $request->validationCustom02;
         $r3 = $request->validationCustom03;
         $r4 = $request->validationCustom04;
         $r5 = $request->validationCustom05;
         $r6 = $request->validationCustom06;
         $r7 = $request->validationCustom07;
-        //$r8 = $request->validationCustom08;
-        $prixUnit = $vol->Prix;
-        $prix = $r6 * $prixUnit + $r7;
+        $r8 = $request->validationCustom08;
+        $r9 = $request->validationCustom09;*/
 
-        $client=new Client();
-        $client->First_name=$r1;
-        $client->Last_Name=$r2;
-        $client->email=$r3;
-        $client->Adress=$r4;
-        $client->Postal_Code=$r5; 
-        $client->save();
+        $vol->NumVol=$request->validationCustom01;
+        $vol->Depart=$request->validationCustom02;
+        $vol->Arrivee=$request->validationCustom03;
+        $vol->Compagnie=$request->validationCustom04;
+        $vol->Date=$request->validationCustom05;
+        $vol->HeureDepart=$request->validationCustom06;
+        $vol->HeureArrivee=$request->validationCustom07;
+        $vol->Prix=$request->validationCustom08;
+        $vol->Duree=$request->validationCustom09;
 
-        $clientid=$client->id;
-        
-        $clt=Client::Find($clientid);
-        $clt->vols()->attach($vol->id);
-        $numvol=$vol->NumVol;
-        
+        $vol->save();
 
-        return view("ticket",compact('r1','r2','r3','r4','r5','r6','r7','prix','numvol'));
+        return back()->with('status','Annonce bien ajoutée');;
+
+
     }
-
     /**
      * Display the specified resource.
      *

@@ -16,7 +16,7 @@ class Controller extends BaseController
 
     public function index()
     {
-        $vols=Vol::sortable()->paginate(5);
+        $vols=Vol::sortable()->paginate(6);
         return view("welcome",compact("vols"));
     }
 }
